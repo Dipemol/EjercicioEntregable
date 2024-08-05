@@ -1,0 +1,11 @@
+<div class="row mifondo">
+      <div class="col-md-3 m-6" *ngFor="let agente of agentes">
+        <div class="card mt-3" [routerLink]="'/Agente/'+agente.uuid">
+          <div class="card-header bg-danger">
+            {{agente.displayName}}
+          </div>
+          <img src="{{agente.fullPortraitV2}}" class="card-img-top" alt="...">
+        </div>
+      </div>
+</div>
+

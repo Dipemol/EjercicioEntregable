@@ -1,0 +1,17 @@
+  <div class="row mifondo">
+    <div class="col-md-6 offset-md-3">
+      <div class="card">
+        <div class="card-header bg-danger">
+          {{miAgente.displayName}}
+        </div>
+        <img src="{{miAgente.fullPortraitV2}}" alt="{{miAgente.displayName}}" class="card-img-top">
+      </div>
+      <div class="card-body bg-white">
+        <p><strong>Descripción:</strong> {{miAgente.description}}</p>
+        <hr>
+        <p><strong>Rol:</strong> {{miAgente.role.displayName}}</p>
+        <hr>
+        <p><strong>Habilidades:</strong> {{miAgente.abilities[0].displayName}} - {{miAgente.abilities[1].displayName}} - {{miAgente.abilities[2].displayName}} - {{miAgente.abilities[3].displayName}}</p>
+      </div>
+    </div>
+  </div>
